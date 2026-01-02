@@ -148,25 +148,9 @@
     <dynamics friction="0.05" damping="0.5" />
   </joint>
 
-  <link name="wrist_link">
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/> 
-      <geometry>
-        <mesh filename="package://gripper/meshes/7_wrist.STL" scale="1 1 1"/>
-      </geometry>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="package://gripper/meshes/7_wrist.STL" scale="1 1 1"/>
-      </geometry>
-    </collision>
-    <inertial>
-      <mass value="0.5"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <inertia ixx="0.005" iyy="0.005" izz="0.005" ixy="0" ixz="0" iyz="0"/>
-    </inertial>
-  </link>
+  <link name="wrist_link" />
+ 
+  
 
   <joint name="support_to_wrist" type="revolute">
     <limit lower="-3.14" upper="3.14" effort="100.0" velocity="100.0"/>
