@@ -38,6 +38,8 @@ setup(
     entry_points={
         'console_scripts': [
             'gui = gripper.gui:main',
+            'arm_ui = gripper.arm_ui:main',
+            'fk_node = gripper.fk_node:main',
         ],
     },
 )
