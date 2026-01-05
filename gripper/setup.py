@@ -40,6 +40,7 @@ setup(
             'gui = gripper.gui:main',
             'arm_ui = gripper.arm_ui:main',
             'fk_node = gripper.fk_node:main',
+            'ik_node = gripper.ik_node:main'
         ],
     },
 )
